@@ -1,0 +1,279 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"api",
+				"api_urls"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"contents": "import React from \"react\";\n// import logo from \"./logo.svg\";\nimport \"./App.css\";\n\nclass App extends React.Component {\n  constructor(props) {\n    super(props);\n    this.state = {\n      todoList: [],\n      activeItem: {\n        id: null,\n        title: '',\n        completed: false,\n      },\n      editing: false\n    }\n    this.fetchTasks = this.fetchTasks.bind(this)\n  };\n\n  componentWillMount() {\n    this.fetchTasks()\n  }\n\n  fetchTasks() {\n    console.log('Fetching...')\n\n    fetch('http://127.0.0.1:8000/api/task-list/').\n      then(response => response\n        .json())\n      .then(data =>\n        console.log('Data:', data))\n  }\n\n  render() {\n    return (\n      <div>\n        <form>\n          <input type=\"text\" placeholder=\"Todo\" />\n          <input type=\"submit\" value=\"add-todo\" />\n        </form>\n      </div>\n    )\n  }\n\n}\n\nexport default App;\n",
+			"file": "frontend/src/App.js",
+			"file_size": 840,
+			"file_write_time": 132424958071555931,
+			"settings":
+			{
+				"buffer_size": 852,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "frontend/src/App.test.js",
+			"settings":
+			{
+				"buffer_size": 280,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"install pa",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: insta",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/F/Internship/Web Development/reactjs/react_django_todo",
+		"/F/Internship/Web Development/reactjs/react_django_todo/frontend",
+		"/F/Internship/Web Development/reactjs/react_django_todo/frontend/src"
+	],
+	"file_history":
+	[
+		"/F/Internship/Web Development/django/django-rest/mysite/api/views.py",
+		"/F/Internship/Web Development/django/django-rest/mysite/api/urls.py",
+		"/F/Internship/Web Development/django/django-rest/mysite/api/models.py",
+		"/F/Internship/Web Development/django/django-rest/mysite/api/serializers.py",
+		"/F/Internship/Web Development/django/django-rest/mysite/mysite/urls.py",
+		"/F/Internship/Web Development/django/django-rest/mysite/api/admin.py",
+		"/F/Internship/Web Development/django/django-rest/mysite/mysite/settings.py"
+	],
+	"find":
+	{
+		"height": 43.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "frontend/src/App.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 852,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								471,
+								471
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true,
+							"typescript_plugin_format_options":
+							{
+								"convertTabsToSpaces": true,
+								"indentSize": 2,
+								"tabSize": 2
+							},
+							"use_tab_stops": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 264.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "frontend/src/App.test.js",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 280,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.doc":
+	{
+		"height": 0.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "sublime_project.sublime-project",
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
